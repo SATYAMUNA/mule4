@@ -32,7 +32,7 @@
       <targetType>server</targetType>
       <username>MSIMULE</username>
       <password>MSImule@1</password>
-      <environment>SANDBOX</environment>
+      <environment>Sandbox</environment>
       
     </armDeployment>
 				</configuration>
