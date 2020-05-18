@@ -10,7 +10,7 @@ pipeline{
  	stage ('Build'){
  		steps {
 		
- 				bat 'mvn -f pom.xml clean install'
+ 				bat 'mvn clean install'
  			
  		}
  	}
