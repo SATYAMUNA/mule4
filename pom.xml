@@ -33,9 +33,7 @@
       <username>MSIMULE}</username>
       <password>MSImule@1</password>
       <environment>SANDBOX</environment>
-      <properties>
-        <key>value</key>
-      </properties>
+      
     </armDeployment>
 				</configuration>
 			</plugin>
