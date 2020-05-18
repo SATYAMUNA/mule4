@@ -1,21 +1,23 @@
 pipeline{
- agent any
+  agent any
+  tools {
+    maven 'Maven' 
+  }
  environment {
     ANYPOINT = credentials('ANYPOINT')
  }
  stages {
  	stage ('Build'){
  		steps {
- 			withMaven(maven:'maven'){
- 				sh 'mvn -f mule-jenkins-pipeline/pom.xml clean install'
- 			}
+		
+ 				bat 'mvn -f pom.xml clean install'
+ 			
  		}
  	}
  	stage ('Deploy'){
  		steps {
- 			withMaven(maven:'maven'){
- 				sh 'mvn -f mule-jenkins-pipeline/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
- 			}
+ 				bat 'mvn -f mule4cicd/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Sandbox -DmuleDeploy'
+ 			
  		}
  	}
  }
