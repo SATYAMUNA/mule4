@@ -30,7 +30,7 @@
       <uri>https://anypoint.mulesoft.com</uri>
       <target>SIT</target>
       <targetType>server</targetType>
-      <username>MSIMULE}</username>
+      <username>MSIMULE</username>
       <password>MSImule@1</password>
       <environment>SANDBOX</environment>
       
