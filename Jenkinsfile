@@ -16,7 +16,7 @@ pipeline{
  	}
  	stage ('Deploy'){
  		steps {
- 				bat 'mvn -f mule4cicd/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Sandbox -DmuleDeploy'
+ 				bat 'mvn -f  package deploy  -Dusername='MSIMULE' -Dpassword='MSImule@1' -Denvironment=Sandbox -DmuleDeploy'
  			
  		}
  	}
